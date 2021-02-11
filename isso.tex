@@ -21,8 +21,8 @@
 %% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
 % \documentclass[10pt,a4paper,normalphoto]{altacv}
 
-\documentclass[10pt,a4paper,ragged2e]{altacv}
 
+\documentclass[10pt,a4paper,ragged2e]{altacv}
 %% AltaCV uses the fontawesome and academicon fonts
 %% and packages.
 %% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
@@ -64,8 +64,7 @@
 \begin{document}
 \name{Zdeněk Kasner}
 \tagline{PhD Student in Computational Linguistics}
-% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
-% \photo{2.5cm}{IMGP0358}
+\photo{2.5cm}{photo}
 \personalinfoA{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
@@ -99,7 +98,6 @@
 Mathematics and Physics, Charles University}{since 10/2019}{Prague, Czechia}
 \begin{itemize}
 \item \textbf{thesis:} Domain Adaptation for Natural Language Generation
-\item \textbf{research topics:} Natural Language Generation, Machine Translation
 \end{itemize}
 
 \divider
@@ -107,7 +105,7 @@ Mathematics and Physics, Charles University}{since 10/2019}{Prague, Czechia}
 \cvevent{Master in Artificial Intelligence}{Faculty of Electrical Engineering, Czech Technical University in Prague}{07/2016 -- 06/2019}{Prague, Czechia}
 \begin{itemize}
 \item \textbf{thesis:} Incorporating Language Models into Non-autoregressive Neural Machine Translation
-\item minor degree in Computer Vision
+\item dean award \& minor degree in Computer Vision
 \end{itemize}
 
 \divider
@@ -138,11 +136,11 @@ Mathematics and Physics, Charles University}{since 10/2019}{Prague, Czechia}
 \small Developing a module for device classification in a high-throughput system for network traffic analysis (NEMEA).
 
 \clearpage
-% \cvsection[page2sidebar]{Publications}
-\cvsection[]{Publications}
+\cvsection[page2sidebar]{Publications}
+% \cvsection[]{Publications}
 \nocite{*}
 
-\begin{fullwidth}
+% \begin{fullwidth}
 % \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
 
 % \divider
@@ -151,9 +149,10 @@ Mathematics and Physics, Charles University}{since 10/2019}{Prague, Czechia}
 
 % \divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}}]
+\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
 
-\end{fullwidth}
+\printbibliography[heading=pubtype,title={\printinfo{\faFile}{Preprints}},type=misc]
+% \end{fullwidth}
 % If the NEXT page doesn't start with a \cvsection but you'd
 % still like to add a sidebar, then use this command on THIS
 % page to add it. The optional argument lets you pull up the

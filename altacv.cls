@@ -26,8 +26,8 @@
 \newif\if@academicons
 \DeclareOption{academicons}{\@academiconstrue}
 %% v1.1.3: Choice of round/square photo
-% \newif\if@normalphoto
-% \DeclareOption{normalphoto}{\@normalphototrue}
+\newif\if@normalphoto
+\DeclareOption{normalphoto}{\@normalphototrue}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
 \newif\if@raggedtwoe
 \DeclareOption{ragged2e}{\@raggedtwoetrue}
@@ -138,7 +138,7 @@
 
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
-% \newcommand{\photo}[2]{\def\@photo{#2}\def\@photodiameter{#1}}
+\newcommand{\photo}[2]{\def\@photo{#2}\def\@photodiameter{#1}}
 \newcommand{\email}[1]{\printinfo{\emailsymbol}{#1}}
 \newcommand{\mailaddress}[1]{\printinfo{\mailsymbol}{#1}}
 \newcommand{\phone}[1]{\printinfo{\phonesymbol}{#1}}
@@ -271,9 +271,9 @@
 
 \newcommand{\cvref}[3]{%
   \smallskip
-  \textcolor{emphasis}{\textbf{#1}}\par
+  \textcolor{emphasis}{\textbf{#1}}\par \smallskip
   \begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em]
-  \item[\normalfont\emailsymbol] #2
+  \item[\normalfont\faUser] #2
   \item[\small\normalfont\mailsymbol] #3
   \end{description}
 %   \medskip
@@ -281,11 +281,12 @@
 
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
 
-\RequirePackage[backend=biber,style=authoryear,sorting=ydnt]{biblatex}
+\RequirePackage[backend=biber,style=apa,sorting=ynt]{biblatex}
 %% For removing numbering entirely when using a numeric style
-% \setlength{\bibhang}{1em}
-% \DeclareFieldFormat{labelnumberwidth}{\makebox[\bibhang][l]{\itemmarker}}
-% \setlength{\biblabelsep}{0pt}
+\setlength{\bibhang}{1em}
+\DeclareFieldFormat{labelnumberwidth}{\makebox[\bibhang][l]{\itemmarker}}
+\setlength{\biblabelsep}{0pt}
+
 \defbibheading{pubtype}{\cvsubsection{#1}}
 \renewcommand{\bibsetup}{\vspace*{-\baselineskip}}
 \AtEveryBibitem{\makebox[\bibhang][l]{\itemmarker}}
