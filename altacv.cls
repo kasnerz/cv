@@ -170,6 +170,7 @@
   \endgroup\medskip
 }
 
+
 \renewenvironment{quote}{\color{accent}\itshape\large}{\par}
 
 \newcommand{\cvsection}[2][]{%
@@ -281,7 +282,7 @@
 
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
 
-\RequirePackage[backend=biber,style=apa,sorting=ynt]{biblatex}
+\RequirePackage[backend=biber,style=apa,sorting=ydnt]{biblatex}
 %% For removing numbering entirely when using a numeric style
 \setlength{\bibhang}{1em}
 \DeclareFieldFormat{labelnumberwidth}{\makebox[\bibhang][l]{\itemmarker}}
