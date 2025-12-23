@@ -1,0 +1,87 @@
+lu2024weblinx:
+  title: "WebLINX: Real-World Website Navigation with Multi-Turn Dialogue"
+  author: ["Xing Han Lu", "Zdeněk Kasner", "Siva Reddy"]
+  date: 2024
+  parent:
+    title: "Proceedings of the ICML 2024"
+    type: proceedings
+
+kasnerReferenceBasedMetricsAnalyzing2024:
+  title: "Beyond Traditional Benchmarks: Analyzing Behaviors of Open LLMs on Data-to-Text Generation"
+  author: ["Zdeněk Kasner", "Ondřej Dušek"]
+  date: 2024
+  parent:
+    title: "Proceedings of the ACL 2024 (Volume 1: Long Papers)"
+    type: proceedings
+
+kasner-etal-2023-tabgenie:
+  title: "TabGenie: A Toolkit for Table-to-Text Generation"
+  author: ["Zdeněk Kasner", "Ekaterina Garanina", "Ondřej Plátek", "Ondřej Dušek"]
+  date: 2023
+  parent:
+    title: "Proceedings of the ACL (Volume 3: System Demonstrations)"
+    type: proceedings
+
+kasner2024factgenie:
+  title: "factgenie: A Framework for Span-based Evaluation of Generated Texts"
+  author: ["Zdeněk Kasner", "Ondřej Plátek", "Patrícia Schmidtová", "Simone Balloccu", "Ondřej Dušek"]
+  date: 2024
+  parent:
+    title: "Proceedings of the 17th International Natural Language Generation Conference (System Demonstrations)"
+    type: proceedings
+
+kasner2022mind:
+  title: "Mind the Labels: Describing Relations in Knowledge Graphs With Pretrained Models"
+  author: ["Zdeněk Kasner", "Ioannis Konstas", "Ondřej Dušek"]
+  date: 2023
+  parent:
+    title: "Proceedings of the EACL 2023"
+    type: proceedings
+
+dusek-kasner-2020-evaluating:
+  title: "Evaluating Semantic Accuracy of Data-to-Text Generation with Natural Language Inference"
+  author: ["Ondřej Dušek", "Zdeněk Kasner"]
+  date: 2020
+  parent:
+    title: "Proceedings of the INLG 2020"
+    type: proceedings
+
+kasner-dusek-2020-data:
+  title: "Data-to-Text Generation with Iterative Text Editing"
+  author: ["Zdeněk Kasner", "Ondřej Dušek"]
+  date: 2020
+  parent:
+    title: "Proceedings of the INLG 2020"
+    type: proceedings
+
+kasner-dusek-2020-train:
+  title: "Train Hard, Finetune Easy: Multilingual Denoising for RDF-to-Text Generation"
+  author: ["Zdeněk Kasner", "Ondřej Dušek"]
+  date: 2020-12
+  parent:
+    title: "Proceedings of the INLG 2020 (WebNLG+ Workshop)"
+    type: proceedings
+
+kasner-dusek-2022-neural:
+  title: "Neural Pipeline for Zero-Shot Data-to-Text Generation"
+  author: ["Zdeněk Kasner", "Ondřej Dušek"]
+  date: 2022
+  parent:
+    title: "Proceedings of the ACL 2022 (Volume 1: Long Papers)"
+    type: proceedings
+
+kasner2020improving:
+  title: "Improving Fluency of Non-Autoregressive Machine Translation"
+  author: ["Zdeněk Kasner", "Jindřich Libovický", "Jindřich Helcl"]
+  date: 2020
+  parent:
+    title: "arXiv:2004.03227"
+    type: misc
+
+kasner2021text:
+  title: "Text-in-Context: Token-Level Error Detection for Table-to-Text Generation"
+  author: ["Zdeněk Kasner", "Simon Mille", "Ondřej Dušek"]
+  date: 2021
+  parent:
+    title: "Proceedings of the INLG 2021"
+    type: proceedings

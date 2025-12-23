@@ -1,0 +1,19 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'cv.blg'
+[91] biber:340> INFO - === Čt říj 16, 2025, 14:26:58
+[110] Biber.pm:420> INFO - Reading 'cv.bcf'
+[201] Biber.pm:991> INFO - Using all citekeys in bib section 0
+[219] Biber.pm:4463> INFO - Processing section 0
+[228] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[229] bibtex.pm:1713> INFO - LaTeX decoding ...
+[240] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[356] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[356] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[356] Biber.pm:4283> INFO - Sorting list 'ydnt/apasortcite//global/global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[356] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[391] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[391] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[391] Biber.pm:4283> INFO - Sorting list 'ydnt/global//global/global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[391] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[402] bbl.pm:676> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
+[414] bbl.pm:779> INFO - Output to cv.bbl
