@@ -71,9 +71,6 @@
   *Certificate of Proficiency in English (C2)* \ Cambridge Level 3 in ESOL International
 
 
-
-    // #social-links()
-
     #v(1em)
     
 = Volunteering
@@ -97,9 +94,6 @@ Communication and cooperation with students of European universities of technolo
 - *Honorable mention* \ CU Grant Agency award (2023)
 - *Outstanding reviewer* at EACL 2021
 - *Best short paper* at INLG 2020 (Dušek and Kasner, 2020)
-
-
-
 ]
 
 
@@ -179,9 +173,6 @@ Communication and cooperation with students of European universities of technolo
     Developing a module for device classification in a high-throughput system for network traffic analysis (NEMEA).
   ],
 )
-
-
-
 
 
 = Teaching & Lecturing
@@ -278,8 +269,6 @@ Communication and cooperation with students of European universities of technolo
     - Graduated with honors
   ],
 )
-
-
 
 
 
