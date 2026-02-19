@@ -11,41 +11,23 @@
     lastname: "Kasner",
     email: "zdenek.kasner@gmail.com",
     address: "Prague, Czechia",
-    // phone: "+420 721 824 283",
-    bluesky: "zkas.cz",
-    position: ("AI Researcher", "Educator", "Lecturer"),
-    website: "https://zkas.cz",
-    // twitter: "docbrown1955",
-    // mastodon: "@docbrown@sciences.social",
-    // matrix: "",
+    bluesky: "zdenekkasner.cz",
+    position: ("LLM Researcher", "Lecturer", "Curious person"),
+    website: "zdenekkasner.cz",
     github: "kasnerz",
-    // gitlab: "",
     linkedin: "zdenek-kasner",
-    // researchgate: "",
-    // scholar: "",
-    // orcid: "",
-    // custom-links: (
-    //   (
-    //     icon-name: "car", // Font Awesome icon name
-    //     label: "DeLorean Time Machine",
-    //     url: "https://en.wikipedia.org/wiki/DeLorean_time_machine",
-    //   ),
-    //   (
-    //     label: "Back to the Future",
-    //     url: "https://www.backtothefuture.com/",
-    //   ),
-    // ),
+
   ),
   profile-picture: image("profile.jpg"),
   accent-color: rgb("#00665c"),
   font-color: rgb("#2E2E2E"),
   header-color: rgb("#00665c"),
+  paper-size: "a4",
   // date: auto,
   // heading-font: "Fira Sans",
   // body-font: ("Noto Sans", "Roboto"),
   // body-font-size: 10.5pt,
-  // paper-size: "us-letter",
-  // side-width: 4cm,
+  side-width: 4cm,
   // gdpr: false,
   // footer: auto,
 )
@@ -53,21 +35,28 @@
 
 #side[
   = About me
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In enim a arcu imperdiet malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Donec quis nibh at felis congue commodo. Maecenas libero.
+  I became interested in language models before they became _large_. Then I have spent some time researching how to make them better. Now I enjoy helping people to take full control of LLMs and AI tools in general and showing them how to work on relevant things in the AI-infused times.
+
 
   = What can I offer
 
-  - TODO
-  - TODO
-  - TODO
-  - TODO
 
+  I can provide help with the following:
+  - Popularization lectures on AI.
+  - Technical workshops on LLMs.
+  - Consultations on anything related to my expertise.
+  #v(1em)
+
+
+  _I am registered as a self-employed person (IČO: #link("https://rzp.gov.cz/verejne-udaje/cs/udaje/vyber-subjektu;ico=06845762;roleSubjektu=P/subjekt;ssarzp=A48b936c6e99c733024b8045cde37d08a685b196d38fd8e712515284fa5ab36751afd")[06845762]) and can issue invoices for my services._
+  
 
   = Skills & Knowledge
   #item-pills((
+    "Computer Science",
     "Python",
-    "Machine Learning",
     "NLP",
+    "Machine Learning",
     "LLMs",
     "AI",
   ))
@@ -84,11 +73,12 @@
 
 
     // #social-links()
+
+    #v(1em)
+    
 = Volunteering
 
 *Board of European Students of Technology* (2014 – 2019)
-
-
 
 
 Communication and cooperation with students of European universities of technology, organizing courses and engineering competitions.
@@ -96,7 +86,7 @@ Communication and cooperation with students of European universities of technolo
 
 = Organizer
 
-- *DGT Summer School Luxembourg*, 2025 \ Co-organizer
+- *DGT Summer School Luxembourg*, 2025 \ Co-organizer, speaker
 - *PracticalD2T Workshop* \@ INLG 2024 \ Co-organizer
 - *PracticalD2T Workshop* \@ INLG 2023 \ Main organizer
 - *SIGDIAL & INLG 2023* \ Local organizer
@@ -109,29 +99,30 @@ Communication and cooperation with students of European universities of technolo
 - *Best short paper* at INLG 2020 (Dušek and Kasner, 2020)
 
 
+
 ]
 
 
 
-= Work Experience
+= Research & Software Development
 
 #entry(
-  title: "Postdoctoral Researcher & Teacher",
+  title: "Postdoctoral Researcher",
   date: "since 09/2024",
   institution: "Faculty of Mathematics and Physics, Charles University",
   location: "Prague, Czechia",
   [
-    Research on controllable text generation and evaluation within the ERC grant NG-NLG (Next-Generation Natural Language Generation). Teaching courses on machine learning and large language models.
+    Research on large language models (LLMs): controllable text generation and evaluation under the ERC grant NG-NLG (Next-Generation Natural Language Generation).
   ],
 )
 
 #entry(
-  title: "PhD Researcher & Teacher",
+  title: "PhD Research Assistant",
   date: "09/2019 – 09/2024",
   institution: "Faculty of Mathematics and Physics, Charles University",
   location: "Prague, Czechia",
   [
-    Research on data-to-text generation
+    Research on data-to-text generation with neural language models.
   ],
 )
 
@@ -170,7 +161,7 @@ Communication and cooperation with students of European universities of technolo
 )
 
 #entry(
-  title: "Software Engineer",
+  title: "Software Developer",
   date: "07/2016 – 08/2017",
   institution: "AI Center, FEE CTU in Prague",
   location: "Prague, Czechia",
@@ -180,7 +171,7 @@ Communication and cooperation with students of European universities of technolo
 )
 
 #entry(
-  title: "Software Engineer",
+  title: "Software Developer",
   date: "04/2015 – 07/2016",
   institution: "CESNET",
   location: "Prague, Czechia",
@@ -193,27 +184,35 @@ Communication and cooperation with students of European universities of technolo
 
 
 
-= Teaching
+= Teaching & Lecturing
 
 #entry(
   title: "Neural Language Models (NI-NLM)",
-  date: "Summer 25/26",
-  institution: "FIT CTI",
+  date: "since 2026",
+  institution: "FIT CTU",
   location: "Prague, Czechia",
-  [Assisting with lectures and assignments.],
+  [Preparing a new course from scratch, teaching  lectures and labs.],
+)
+#entry(
+  title: "Computational Creativity",
+  date: "since 2025",
+  institution: "Didaktikon UK",
+  location: "Prague, Czechia",
+  [Interactive workshop for primary and secondary schools.],
 )
 
 #entry(
   title: "Large Language Models (NPFL140)",
-  date: "Summer 23/24, 24/25",
+  date: "since 2024",
   institution: "MFF UK",
   location: "Prague, Czechia",
   [Assisting with lectures and assignments.],
 )
 
+
 #entry(
   title: "Introduction to Machine Learning with Python (NPFL129)",
-  date: "Winter 23/24, 24/25",
+  date: "2023-2025",
   institution: "MFF UK",
   location: "Prague, Czechia",
   [Lab teaching.],
@@ -221,7 +220,7 @@ Communication and cooperation with students of European universities of technolo
 
 #entry(
   title: "Introduction to Linux (NSWI177)",
-  date: "Summer 21/22",
+  date: "2022",
   institution: "MFF UK",
   location: "Prague, Czechia",
   [Lab teaching (inverted class: no lectures).],
@@ -229,7 +228,7 @@ Communication and cooperation with students of European universities of technolo
 
 #entry(
   title: "Programming I (NPRG030) & Introduction to Algorithms (NPRG062)",
-  date: "Winter 20/21",
+  date: "2020",
   institution: "MFF UK",
   location: "Prague, Czechia",
   [Lab teaching, preparing and evaluating assignments.],

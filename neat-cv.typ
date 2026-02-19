@@ -810,15 +810,18 @@
                  ]
               ],
               [
-                 #if "linkedin" in author [
+                #if "linkedin" in author [
                    #fa-icon("linkedin", fill: white) #h(0.5em) #link("https://www.linkedin.com/in/" + author.linkedin)[#author.linkedin] \
                  ]
+
+                #if "bluesky" in author [
+                   #box(image("img/bsky.svg"), height: 1em) #h(0.5em) #link("https://bsky.app/profile/" + author.bluesky)[\@#author.bluesky]
+                 ]
+
                  #if "github" in author [
                    #fa-icon("github", fill: white) #h(0.5em) #link("https://github.com/" + author.github)[#author.github] \
                  ]
-                 #if "bluesky" in author [
-                   #fa-icon("cloud", fill: white) #h(0.5em) #link("https://bsky.app/profile/" + author.bluesky)[\@#author.bluesky]
-                 ]
+                 
               ]
             )
           ]

@@ -1,3 +1,35 @@
+kasner2026llmsspanannotatorscomparative:
+  title: "LLMs as Span Annotators: A Comparative Study of LLMs and Humans"
+  author: ["Zdeněk Kasner", "Vilém Zouhar", "Patrícia Schmidtová", "Ivan Kartáč", "Kristýna Onderková", "Ondřej Plátek", "Dimitra Gkatzia", "Saad Mahamood", "Ondřej Dušek", "Simone Balloccu"]
+  date: 2026
+  parent:
+    title: "Proceedings of the 2026 Workshop on Multilingual Multicultural Evaluation, co-located with EACL 2026"
+    type: proceedings
+
+kasner2025animatedllm:
+  title: "AnimatedLLM: Explaining LLMs with Interactive Visualizations"
+  author: ["Zdeněk Kasner", "Ondřej Dušek"]
+  date: 2026
+  parent:
+    title: "Proceedings of 2026 TeachingNLP Workshop, co-located with EACL 2026"
+    type: proceedings
+
+semin2026strategies:
+  title: "Strategies for Span Labeling with Large Language Models"
+  author: ["Danil Semin", "Ondřej Dušek", "Zdeněk Kasner"]
+  date: 2026
+  parent:
+    title: "arXiv:2601.16946"
+    type: misc
+
+onderkova2025freshtab:
+  title: "FreshTab: Sourcing Fresh Data for Table-to-Text Generation Evaluation"
+  author: ["Kristýna Onderková", "Ondřej Plátek", "Zdeněk Kasner", "Ondřej Dušek"]
+  date: 2025
+  parent:
+    title: "Proceedings of the 18th International Natural Language Generation Conference"
+    type: proceedings
+
 lu2024weblinx:
   title: "WebLINX: Real-World Website Navigation with Multi-Turn Dialogue"
   author: ["Xing Han Lu", "Zdeněk Kasner", "Siva Reddy"]
