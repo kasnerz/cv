@@ -28,7 +28,7 @@
 /// Height of the box of each individual section in the level bar
 #let LEVEL_BAR_BOX_HEIGHT = 3.5pt
 /// Width of the left column in an `entry()` or `publication()`
-#let ENTRY_LEFT_COLUMN_WIDTH = 5em
+#let ENTRY_LEFT_COLUMN_WIDTH = 6.5em
 
 // ---- Utility ----
 /// Calculate/scale the length of stroke elements, as strokes are visual
@@ -217,32 +217,77 @@
   context block(above: 1em, below: 0.65em)[
     #let theme = __st-theme.final()
 
-    #grid(
-      columns: (ENTRY_LEFT_COLUMN_WIDTH, auto),
-      align: (left, left),
-      column-gutter: .8em,
-      [
-        #text(size: 0.7em, fill: theme.font-color.lighten(50%), date)
-      ],
-      [
-        #set text(size: 0.85em)
+    #let formatted-date = if type(date) == str and " – " in date {
+      let parts = date.split(" – ")
+      align(right)[
+        from #parts.at(0) \
+        to #parts.at(1)
+      ]
+    } else if type(date) == str and " - " in date {
+      let parts = date.split(" - ")
+      align(right)[
+        from #parts.at(0) \
+        to #parts.at(1)
+      ]
+    } else if type(date) == str and "-" in date {
+      let parts = date.split("-")
+      align(right)[
+        from #parts.at(0) \
+        to #parts.at(1)
+      ]
+    } else {
+      align(right)[#date]
+    }
 
-        #text(weight: "semibold", title)
+    #let left-col = text(size: 0.7em, fill: theme.font-color.lighten(50%), formatted-date)
+    #let right-col = [
+      #set text(size: 0.85em)
 
-        #text(size: 0.9em, smallcaps([
-          #if institution != "" or location != "" [
-            #institution
-            #h(1fr)
-            #if location != "" [
-              #fa-icon("location-dot", size: 0.85em, fill: theme.accent-color)
-              #location
-            ]
+      #text(weight: "semibold", title)
+
+      #text(size: 0.9em, smallcaps([
+        #if institution != "" or location != "" [
+          #institution
+          #h(1fr)
+          #if location != "" [
+            #fa-icon("location-dot", size: 0.85em, fill: theme.accent-color)
+            #location
           ]
-        ]))
+        ]
+      ]))
 
-        #text(size: 0.9em, description)
-      ],
-    )
+      #text(size: 0.9em, description)
+    ]
+
+    #layout(size => {
+      let row = grid(
+        columns: (ENTRY_LEFT_COLUMN_WIDTH, 1em, 1fr),
+        align: (right, center, left),
+        column-gutter: (0.5em, 0.8em),
+        left-col,
+        [],
+        right-col
+      )
+      let h = measure(block(width: size.width, row)).height
+      let is-ongoing = type(date) == str and "since" in date
+      let dot = if is-ongoing {
+        circle(radius: 3pt, fill: white, stroke: 1.5pt + theme.accent-color)
+      } else {
+        circle(radius: 3pt, fill: theme.accent-color, stroke: none)
+      }
+
+      grid(
+        columns: (ENTRY_LEFT_COLUMN_WIDTH, 1em, 1fr),
+        align: (right, center, left),
+        column-gutter: (0.5em, 0.8em),
+        left-col,
+        [
+          #place(dx: 0.5em, dy: 0.1em, rect(width: 1pt, height: h + 0.95em, fill: theme.accent-color, stroke: none))
+          #place(dx: 0.5em - 3pt + 0.5pt, dy: 0.05em, dot)
+        ],
+        right-col
+      )
+    })
   ]
 }
 
@@ -602,18 +647,36 @@
     }
 
     for year in all-years {
-      grid(
-        columns: (ENTRY_LEFT_COLUMN_WIDTH, auto),
-        align: (right, left),
-        column-gutter: .8em,
-        text(size: 0.8em, fill: theme.font-color.lighten(50%), year),
-
-        __format-publications-year(
-          publications-by-year.at(year),
-          highlight-authors,
-          max-authors,
-        ),
+      let left-col = text(size: 0.8em, fill: theme.font-color.lighten(50%), year)
+      let right-col = __format-publications-year(
+        publications-by-year.at(year),
+        highlight-authors,
+        max-authors,
       )
+      layout(size => {
+        let row = grid(
+          columns: (ENTRY_LEFT_COLUMN_WIDTH, 1em, 1fr),
+          align: (right, center, left),
+          column-gutter: (0.5em, 0.8em),
+          left-col,
+          [],
+          right-col
+        )
+        let h = measure(block(width: size.width, row)).height
+        let dot = circle(radius: 3pt, fill: theme.accent-color, stroke: none)
+
+        grid(
+          columns: (ENTRY_LEFT_COLUMN_WIDTH, 1em, 1fr),
+          align: (right, center, left),
+          column-gutter: (0.5em, 0.8em),
+          left-col,
+          [
+            #place(dx: 0.5em, dy: 0.3em, rect(width: 1pt, height: h + 0.75em, fill: theme.accent-color, stroke: none))
+            #place(dx: 0.5em - 3pt + 0.5pt, dy: 0.3em, dot)
+          ],
+          right-col
+        )
+      })
     }
   }
 )
@@ -868,7 +931,7 @@
   }
 
   let body-content-block = {
-    show heading.where(level: 1): it => block(width: 100%)[
+    show heading.where(level: 1): it => block(width: 100%, above: 2em)[
       #text(
         fill: accent-color,
         weight: "regular",

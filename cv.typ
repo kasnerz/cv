@@ -18,7 +18,7 @@
     linkedin: "zdenek-kasner",
 
   ),
-  profile-picture: image("profile.jpg"),
+  profile-picture: image("img/profile.jpg"),
   accent-color: rgb("#00665c"),
   font-color: rgb("#2E2E2E"),
   header-color: rgb("#00665c"),
@@ -35,7 +35,7 @@
 
 #side[
   = About me
-  I became interested in language models before they became _large_. Then I have spent some time researching how to make them better. Now I enjoy helping people to take full control of LLMs and AI tools in general and showing them how to work on relevant things in the AI-infused times.
+  I got interested in language models before they became _large_. Then I have spent some time researching how to make them better. Now I enjoy helping people to take full control of LLMs and AI tools in general and showing them how to work on relevant things in the AI-infused times.
 
 
   = What can I offer
@@ -48,7 +48,7 @@
   #v(1em)
 
 
-  _I am registered as a self-employed person (IČO: #link("https://rzp.gov.cz/verejne-udaje/cs/udaje/vyber-subjektu;ico=06845762;roleSubjektu=P/subjekt;ssarzp=A48b936c6e99c733024b8045cde37d08a685b196d38fd8e712515284fa5ab36751afd")[06845762]) and can issue invoices for my services._
+  _I am registered as self-employed (IČO: #link("https://rzp.gov.cz/verejne-udaje/cs/udaje/vyber-subjektu;ico=06845762;roleSubjektu=P/subjekt;ssarzp=A48b936c6e99c733024b8045cde37d08a685b196d38fd8e712515284fa5ab36751afd")[06845762]) and can issue invoices for my services._
   
 
   = Skills & Knowledge
