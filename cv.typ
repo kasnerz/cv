@@ -111,7 +111,7 @@ Communication and cooperation with students of European universities of technolo
 )
 
 #entry(
-  title: "PhD Research Assistant",
+  title: "PhD Researcher",
   date: "09/2019 – 09/2024",
   institution: "Faculty of Mathematics and Physics, Charles University",
   location: "Prague, Czechia",
