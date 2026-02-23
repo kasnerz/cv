@@ -671,8 +671,8 @@
           column-gutter: (0.5em, 0.8em),
           left-col,
           [
-            #place(dx: 0.5em, dy: 0.3em, rect(width: 1pt, height: h + 0.75em, fill: theme.accent-color, stroke: none))
-            #place(dx: 0.5em - 3pt + 0.5pt, dy: 0.3em, dot)
+            #place(dx: 0.5em, dy: 0em, rect(width: 1pt, height: h + 0.75em, fill: theme.accent-color, stroke: none))
+            #place(dx: 0.5em - 3pt + 0.5pt, dy: -0.05em, dot)
           ],
           right-col
         )
