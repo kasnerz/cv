@@ -35,7 +35,7 @@
 
 #side[
   = About me
-  I got interested in language models before they became _large_. Then I have spent some time researching how to make them better. Now I enjoy helping people to take full control of LLMs and AI tools in general and showing them how to work on relevant things in the AI-infused times.
+  I got interested in language models before they became _large_. Then I have spent some time researching how to make them better. Now I enjoy helping people to take full control of LLMs and AI tools in general.
 
 
   = What can I offer
@@ -71,7 +71,7 @@
   *Certificate of Proficiency in English (C2)* \ Cambridge Level 3 in ESOL International
 
 
-    #v(1em)
+    #v(3em)
     
 = Volunteering
 
