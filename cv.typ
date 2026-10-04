@@ -12,7 +12,7 @@
     email: "zdenek@lokalni.ai",
     address: "Prague, Czechia",
     bluesky: "zdenekkasner.cz",
-    position: ("LLM Researcher", "Lecturer", "Curious person"),
+    position: ("Freelance AI Consultant", "Lecturer", "Curious person"),
     website: "zdenekkasner.cz",
     github: "kasnerz",
     linkedin: "zdenek-kasner",
