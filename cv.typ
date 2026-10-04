@@ -9,7 +9,7 @@
   author: (
     firstname: "Zdeněk",
     lastname: "Kasner",
-    email: "zdenek.kasner@gmail.com",
+    email: "zdenek@lokalni.ai",
     address: "Prague, Czechia",
     bluesky: "zdenekkasner.cz",
     position: ("LLM Researcher", "Lecturer", "Curious person"),
@@ -35,21 +35,23 @@
 
 #side[
   = About me
-  I got interested in language models before they became _large_. Then I have spent some time researching how to make them better. Now I enjoy helping people to take full control of LLMs and AI tools in general.
+  I got interested in language models before they became _large_. Then I have spent some time researching how to make them better. Now I help people to understand them and take full control of them in their AI tools and systems.
 
 
   = What can I offer
 
 
   I can provide help with the following:
+  - Consultations on local AI deployment.
+  - Technical workshops on open AI models.
   - Popularization lectures on AI.
-  - Technical workshops on LLMs.
-  - Consultations on anything related to my expertise.
   #v(1em)
 
 
   _I am registered as self-employed (IČO: #link("https://rzp.gov.cz/verejne-udaje/cs/udaje/vyber-subjektu;ico=06845762;roleSubjektu=P/subjekt;ssarzp=A48b936c6e99c733024b8045cde37d08a685b196d38fd8e712515284fa5ab36751afd")[06845762]) and can issue invoices for my services._
   
+  = Public outreach
+  I run a Czech website on open AI models _#link("https://lokalni.ai")[Lokální.AI]_. I write blogposts, publish a newsletter, and run a community Discord server. 
 
   = Skills & Knowledge
   #item-pills((
@@ -67,12 +69,14 @@
   #item-with-level("French", 3)
   #item-with-level("Dutch", 1)
 
-  = Certificates
-  *Certificate of Proficiency in English (C2)* \ Cambridge Level 3 in ESOL International
-
 
     #v(3em)
     
+      = Certificates
+  *Certificate of Proficiency in English (C2)* \ Cambridge Level 3 in ESOL International
+
+
+
 = Volunteering
 
 *Board of European Students of Technology* (2014 – 2019)
@@ -98,11 +102,21 @@ Communication and cooperation with students of European universities of technolo
 
 
 
-= Research & Software Development
+= Work & Research
+
+#entry(
+  title: "Local AI Deployment Specialist",
+  date: "since 10/2026",
+  institution: "Freelancer, Lokální.AI",
+  location: "Czechia",
+  [
+    Helping institutions and bussiness run AI solutions locally using open AI models. Consulting, analysing, preparing and implementing solutions.
+  ],
+)
 
 #entry(
   title: "Postdoctoral Researcher",
-  date: "since 09/2024",
+  date: "09/2024 – 09/2026",
   institution: "Faculty of Mathematics and Physics, Charles University",
   location: "Prague, Czechia",
   [
@@ -125,16 +139,16 @@ Communication and cooperation with students of European universities of technolo
   date: "02/2023 – 05/2023",
   institution: "Mila – Quebec AI Institute",
   location: "Montréal, Canada",
-  [Research on collaborative LLM agents, advised by Siva Reddy.]
+  [Research on LLM agents for web navigation, advised by Siva Reddy.]
 )
 
-#entry(
-  title: "Research Intern",
-  date: "10/2021 – 12/2021",
-  institution: "Heriot-Watt University",
-  location: "Edinburgh, UK",
-  [Research on data-to-text generation from knowledge graphs, advised by Ioannis Konstas.]
-)
+// #entry(
+//   title: "Research Intern",
+//   date: "10/2021 – 12/2021",
+//   institution: "Heriot-Watt University",
+//   location: "Edinburgh, UK",
+//   [Research on data-to-text generation from knowledge graphs, advised by Ioannis Konstas.]
+// )
 
 #entry(
   title: "Software Developer & Researcher",
@@ -182,7 +196,7 @@ Communication and cooperation with students of European universities of technolo
   date: "since 2026",
   institution: "FIT CTU",
   location: "Prague, Czechia",
-  [Preparing a new course from scratch, teaching  lectures and labs.],
+  [A new elective course from scratch: teaching  lectures and labs.],
 )
 #entry(
   title: "Computational Creativity",
@@ -194,7 +208,7 @@ Communication and cooperation with students of European universities of technolo
 
 #entry(
   title: "Large Language Models (NPFL140)",
-  date: "since 2024",
+  date: "2024-2026",
   institution: "MFF UK",
   location: "Prague, Czechia",
   [Assisting with lectures and assignments.],
