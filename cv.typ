@@ -35,13 +35,13 @@
 
 #side[
   = About me
-  I got interested in language models before they became _large_. Then I have spent some time researching how to make them better. Now I help people to understand them and take full control of them in their AI tools and systems.
+  I got interested in language models before they became _large_. Then I've spent some time researching how to make them better. Now I help people to take full control of them in their AI tools and systems.
 
 
   = What can I offer
 
 
-  I can provide help with the following:
+  I can help with the following:
   - Consultations on local AI deployment.
   - Technical workshops on open AI models.
   - Popularization lectures on AI.
@@ -105,12 +105,12 @@ Communication and cooperation with students of European universities of technolo
 = Work & Research
 
 #entry(
-  title: "Local AI Deployment Specialist",
+  title: "Local AI Specialist",
   date: "since 10/2026",
   institution: "Freelancer, Lokální.AI",
   location: "Czechia",
   [
-    Helping institutions and bussiness run AI solutions locally using open AI models. Consulting, analysing, preparing and implementing solutions.
+    Helping institutions and bussiness run open-weight AI solutions locally using open AI models. Consulting, analysing, and implementing solutions.
   ],
 )
 
